@@ -1,0 +1,13 @@
+code segment
+assume cs:code,ds:code
+ORG 1000H
+MOV AX,1200H
+MOV BX,1202H
+ADD AX,BX
+MOV SI,1204H
+MOV[SI],AX
+MOV AH,4CH
+INT 21H
+HLT
+CODE ENDS
+END
